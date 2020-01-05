@@ -215,14 +215,14 @@ CHECK_RANDOMIZER
 ## Don't set this to the same server, BYOND will automatically restart players to the server when it has restarted.
 # SERVER ss13.example.com:2506
 
-## forum address
-FORUMURL https://discord.gg/JNEeAQ2
+## patreon address
+PATREONURL https://www.patreon.com/falloutthirteenremnants
 
 ## Wiki address
 WIKIURL https://bad-deathclaw.fandom.com/wiki/Bad_Deathclaw_Wiki
 
 ## Rules address
-RULESURL https://discord.gg/JNEeAQ2
+RULESURL https://docs.google.com/document/d/1m3kFeqUw-oFefoEadolTPbkaOh7rQ1-xCx9ba5UYClc/edit?usp=sharing
 
 ## Github address
 GITHUBURL https://github.com/Fallout-Thirteen-Remnants/Fallout-Thirteen-Remnants
