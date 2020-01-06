@@ -488,3 +488,299 @@ Recon Ranger
 	/*
 	*/
 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////WINTERIZED//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/datum/job/ncr/winter_f13cpt
+	title = "Winter NCR Captain"
+	flag = F13WINTERCAPTAIN
+	head_announce = list("Security")
+	faction = "NCR"
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant, coordinating with your staff you must ensure that the objectives of central command are completed to the letter. Working closely with them on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	supervisors = "Colonel"
+	req_admin_notify = 1
+	exp_requirements = 0
+	exp_type = EXP_TYPE_NCRCOMMAND
+
+	outfit = /datum/outfit/job/ncr/winter_f13cpt
+
+/datum/outfit/job/ncr/winter_f13cpt
+	name = "Winter NCR Captain"
+	jobtype 	= /datum/job/ncr/winter_f13cpt
+	id 			= /obj/item/card/id/dogtag/ncrcaptain
+	uniform		= /obj/item/clothing/under/f13/ncr/officer/winter
+	accessory 	= /obj/item/clothing/accessory/ncr/CPT
+	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/captain/winter
+	head 		= /obj/item/clothing/head/beret/ncr/winter
+	belt        = /obj/item/storage/belt/military/assault/ncr/winter
+	glasses 	= /obj/item/clothing/glasses/sunglasses/big
+	suit_store 	= /obj/item/gun/ballistic/automatic/pistol/deagle
+	shoes       = /obj/item/clothing/shoes/f13/military/ncr_officer/winter
+	gloves      = /obj/item/clothing/gloves/f13/ncr/winter
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m50=3, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
+		/obj/item/melee/classic_baton/telescopic=1, \
+		/obj/item/twohanded/binocs=1, \
+		/obj/item/storage/bag/money/small/ncr, \
+		/obj/item/clothing/mask/ncr_facewrap_winter)
+	box = null
+
+
+/*
+Lieutenant
+*/
+/datum/job/ncr/winter_f13lt
+	title = "Winter NCR Lieutenant"
+	flag = F13WINTERLIEUTENANT
+	total_positions = 1
+	spawn_positions = 1
+	faction = "NCR"
+	description = "You are the direct superior to the Sergeant and Enlisted, working with the Captain and under special circumstances, Rangers. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
+	supervisors = "Captain and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 0
+
+	outfit = /datum/outfit/job/ncr/winter_f13lt
+
+/datum/outfit/job/ncr/winter_f13lt
+	name		= "Winter NCR Lieutenant"
+	jobtype		= /datum/job/ncr/winter_f13lt
+	id			= /obj/item/card/id/dogtag/ncrlieutenant
+	uniform		= /obj/item/clothing/under/f13/ncr/officer/winter
+	accessory	= /obj/item/clothing/accessory/ncr/LT
+	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced/winter
+	head 		= /obj/item/clothing/head/beret/ncr/winter
+	belt        = /obj/item/storage/belt/military/assault/ncr/winter
+	glasses 	= /obj/item/clothing/glasses/sunglasses/big
+	suit_store 	= /obj/item/gun/ballistic/automatic/marksman/servicerifle/r82
+	shoes       = /obj/item/clothing/shoes/f13/military/ncr_officer/winter
+	gloves      = /obj/item/clothing/gloves/f13/ncr/winter
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=2, \
+		/obj/item/kitchen/knife/combat/survival=1, \
+		/obj/item/gun/ballistic/automatic/pistol/m1911=1, \
+		/obj/item/melee/classic_baton/telescopic=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
+		/obj/item/ammo_box/magazine/m45=2, \
+		/obj/item/twohanded/binocs=1, \
+		/obj/item/storage/bag/money/small/ncrofficers, \
+		/obj/item/clothing/mask/ncr_facewrap_winter)
+	box = null
+
+/*
+Sergeant
+*/
+/datum/job/ncr/winter_f13sgt
+	title = "Winter NCR Sergeant"
+	flag = F13WINTERSERGEANT
+	total_positions = 2
+	spawn_positions = 2
+	faction = "NCR"
+	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the Enlisted follow them to the letter. Additionally you are responsible for the well being of the troops and their ongoing training with the NCR."
+	supervisors = "Lieutenants and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 0
+
+	outfit = /datum/outfit/job/ncr/winter_f13sgt
+
+	loadout_options = list(
+	/datum/outfit/loadout/rifle,
+	/datum/outfit/loadout/leader)
+
+/datum/outfit/job/ncr/winter_f13sgt
+	name = "Winter NCR Sergeant"
+	jobtype	= /datum/job/ncr/winter_f13sgt
+	id = 			/obj/item/card/id/dogtag/ncrsergeant
+	uniform =  		/obj/item/clothing/under/f13/ncr
+	accessory =     /obj/item/clothing/accessory/ncr/SGT
+	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	glasses = 		/obj/item/clothing/glasses/sunglasses/big
+	belt =          /obj/item/storage/belt/military/assault/ncr
+	suit_store = 	null
+	head =          /obj/item/clothing/head/f13/ncr
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
+	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat/survival=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/stack/medical/gauze=1, \
+		/obj/item/storage/bag/money/small/ncrofficers, \
+		/obj/item/clothing/mask/ncr_facewrap)
+	box = null
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Corporal
+*/
+/datum/job/ncr/winter_f13cpl
+	title = "Winter NCR Corporal"
+	flag = F13WINTERCORPORAL
+	faction = "NCR"
+	total_positions = 4
+	spawn_positions = 4
+	description = "You answer to your Sergeant and follow the chain of command, to your commanding officer, the Captain."
+	supervisors = "Sergeants and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 0
+
+	outfit = /datum/outfit/job/ncr/winter_f13cpl
+
+	loadout_options = list(
+	/datum/outfit/loadout/winter_corporal,
+	/datum/outfit/loadout/winter_medic,
+	/datum/outfit/loadout/winter_marksman)
+
+/datum/outfit/job/ncr/winter_f13cpl
+	name = "Winter NCR Corporal"
+	jobtype = /datum/job/ncr/winter_f13cpl
+	id = 			/obj/item/card/id/dogtag/ncrtrooper
+	uniform =  		/obj/item/clothing/under/f13/ncr/winter
+	accessory =     /obj/item/clothing/accessory/ncr/CPL
+	suit = 			null
+	head = 			null
+	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	glasses = 		null
+	belt =          /obj/item/storage/belt/military/NCR_Bandolier_winter
+	suit_store = 	null
+	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat/survival=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/stack/medical/gauze=1, \
+		/obj/item/storage/bag/money/small/ncrenlisted, \
+		/obj/item/clothing/mask/ncr_facewrap_winter)
+	box = null
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/datum/outfit/loadout/winter_corporal
+	name = "Winter Corporal"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/winter
+	head = /obj/item/clothing/head/f13/ncr/goggles/winter
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
+
+/datum/outfit/loadout/winter_medic
+	name = "Combat Medic"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/winter
+	head = /obj/item/clothing/head/f13/ncr/winter/medic
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m9mm=2,
+		/obj/item/storage/firstaid/regular=1,
+		/obj/item/storage/pill_bottle/mining=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,
+		/obj/item/book/granter/trait/chemistry=1)
+
+/datum/outfit/loadout/winter_marksman
+	name = "Winter Marksman"
+	suit_store = /obj/item/gun/ballistic/shotgun/remington/scoped
+	head = /obj/item/clothing/head/beret/ncr_scout/winter
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout/winter
+	backpack_contents = list(
+		/obj/item/ammo_box/a308=3)
+
+
+
+/*
+Trooper
+*/
+/datum/job/ncr/winter_f13tpr
+	title = "Winter NCR Trooper"
+	flag = F13WINTERTROOPER
+	faction = "NCR"
+	total_positions = 6
+	spawn_positions = 6
+	description =  "You answer to the Sergeants or Corporals,  following the chain of command, to your commanding officer, the Captain."
+	supervisors = "Corporals and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 0
+
+	outfit = /datum/outfit/job/ncr/winter_f13tpr
+
+	loadout_options = list(
+	/datum/outfit/loadout/winter_trooper,
+	/datum/outfit/loadout/winter_hunting)
+
+/datum/outfit/job/ncr/winter_f13tpr
+	name = "Winter NCR Trooper"
+	jobtype = /datum/job/ncr/winter_f13tpr
+	id = 			/obj/item/card/id/dogtag/ncrtrooper
+	uniform =  		/obj/item/clothing/under/f13/ncr/winter
+	accessory =     /obj/item/clothing/accessory/ncr/TPR
+	ears = null
+	head = 			/obj/item/clothing/head/f13/ncr/goggles/winter
+	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/winter
+	belt =          /obj/item/storage/belt/military/NCR_Bandolier_winter
+	glasses = 		null
+	suit_store = 	null
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat/survival=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/stack/medical/gauze=1, \
+		/obj/item/storage/bag/money/small/ncrenlisted, \
+		/obj/item/clothing/mask/ncr_facewrap_winter)
+	box = null
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/datum/outfit/loadout/winter_trooper
+	name = "NCR Service Rifle"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=3)
+
+/datum/outfit/loadout/winter_hunting
+	name = "NCR Rifleman"
+	suit_store = /obj/item/gun/ballistic/shotgun/remington
+	backpack_contents = list(
+		/obj/item/ammo_box/a308=3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
+
+/*
+Recruit
+*/
+/datum/job/ncr/winter_f13rct
+	title = "Winter NCR Recruit"
+	flag = F13RECRUIT
+	faction = "NCR"
+	total_positions = 6
+	spawn_positions = 6
+	description = "You answer to the Sergeants or Corporals,  following the chain of command, to your commanding officer, the Captain."
+	supervisors = "Corporals and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 0
+	exp_type = EXP_TYPE_CREW
+
+	outfit = /datum/outfit/job/ncr/winter_f13rct
+
+/datum/outfit/job/ncr/winter_f13rct
+	name = "Winter NCR Recruit"
+	jobtype = /datum/job/ncr/winter_f13rct
+	id = 			/obj/item/card/id/dogtag/ncrtrooper
+	uniform =  		/obj/item/clothing/under/f13/ncr/winter
+	accessory =     /obj/item/clothing/accessory/ncr/REC
+	ears = null
+	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/winter
+	gloves = null
+	head = 			/obj/item/clothing/head/f13/ncr/winter
+	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	glasses = 		null
+	suit_store = 	/obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
+	belt =          /obj/item/storage/belt/military/assault/ncr/winter
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/small=2, \
+		/obj/item/kitchen/knife/combat/survival=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/stack/medical/gauze=1, \
+		/obj/item/storage/bag/money/small/ncrenlisted)
+	box = null
