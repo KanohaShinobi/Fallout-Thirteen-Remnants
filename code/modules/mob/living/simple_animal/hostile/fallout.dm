@@ -43,7 +43,7 @@
 	name = "NCR Trooper"
 	icon_state = "ncrtrooper"
 	icon_living = "ncrtrooper"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/ncr, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	ranged = 1
 	maxHealth = 140
 	health = 140
@@ -55,7 +55,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/npc/ncr/trooper/Aggro()
 	..()
-	speak = list("HOSTILES IN THE WIRE!!", "OVER HERE!!", "CONTACT!!", "TAKING FIRE!!", "GOT YOUR SIX LIEUTENANT!!", "ON YOU, LIEUTENANT!!")
+	speak = list("HOSTILES IN THE AREA!!", "OVER HERE!!", "CONTACT!!", "TAKING FIRE!!", "FOR THE REPUBLIC!!", "ON YOU, COMMANDER!!")
 
 // heavy trooper
 
@@ -96,7 +96,7 @@
 	minimum_distance = 6
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	casingtype = /obj/item/ammo_casing/a556n
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/ncr, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 
 /mob/living/simple_animal/hostile/retaliate/npc/ncr/sergeant/Aggro()
 	..()
@@ -117,7 +117,7 @@
 	minimum_distance = 6
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	casingtype = /obj/item/ammo_casing/a556n
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/ncr_lieutenant, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 
 /mob/living/simple_animal/hostile/retaliate/npc/ncr/lieutenant/Aggro()
 	..()
@@ -139,7 +139,7 @@
 	minimum_distance = 6
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	casingtype = /obj/item/ammo_casing/a556n
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/ncr_captain, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 
 /mob/living/simple_animal/hostile/retaliate/npc/ncr/firstrecon
 	name = "NCR First Recon"
