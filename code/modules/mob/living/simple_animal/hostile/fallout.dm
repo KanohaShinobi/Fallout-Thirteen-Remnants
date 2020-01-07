@@ -154,7 +154,7 @@
 	minimum_distance = 6
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	casingtype = /obj/item/ammo_casing/a556n
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/ncr_recon, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 
 // legion
 
@@ -175,7 +175,7 @@
 	speak = list("Ave, True to Caesar.", "I'm looking forward to getting sent across the river.", "Caesar has been seen walking among the troops. A good omen.", "There have been sightings of Rangers in black armor, the best the Profligates have to offer.")
 	attack_sound = 'sound/weapons/punch1.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/item/claymore/machete/gladius)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion, /obj/item/claymore/machete/gladius)
 	faction = list("Legion", "Neutral")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
@@ -188,7 +188,7 @@
 	desc = "A member of Caesar's Legion, they look disgruntled and battle hardened. They are carrying a machete."
 	icon_state = "legionmelee"
 	icon_living = "legionmelee"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	maxHealth = 150
 	health = 150
 
@@ -202,7 +202,7 @@
 /mob/living/simple_animal/hostile/retaliate/npc/legion/legionary/ranged
 	icon_state = "legionranged"
 	icon_living = "legionranged"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	maxHealth = 130
 	health = 130
 	ranged = 1
@@ -219,7 +219,7 @@
 	desc = "A veteran member of Caesar's Legion, their armor is blood stained and they seem constantly aware of their surroundings."
 	icon_state = "legionveteran"
 	icon_living = "legionveteran"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion_veteran, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	maxHealth = 180
 	health = 180
 	ranged = 1
@@ -236,7 +236,7 @@
 	desc = "A veteran member of Caesar's Legion, their armor is blood stained and they seem constantly aware of their surroundings."
 	icon_state = "legionexplorer"
 	icon_living = "legionexplorer"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion_explorer, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	maxHealth = 150
 	health = 150
 	ranged = 1
@@ -253,7 +253,7 @@
 	desc = "A platoon level officer in Caesar's Legion. He stands with a fearsome gait and constantly gives concise and direct orders to the legionaries around him."
 	icon_state = "legiondecanus"
 	icon_living = "legiondecanus"
-	loot = list(/obj/item/gun/ballistic/automatic/marksman/servicerifle)
+	loot = list(/obj/effect/mob_spawn/human/corpse/legion_decanus, /obj/item/gun/ballistic/automatic/marksman/servicerifle)
 	ranged = 1
 	maxHealth = 170
 	health = 170
