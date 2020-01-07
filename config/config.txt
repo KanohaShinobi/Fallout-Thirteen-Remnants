@@ -219,7 +219,7 @@ CHECK_RANDOMIZER
 PATREONURL https://www.patreon.com/falloutthirteenremnants
 
 ## Wiki address
-WIKIURL https://bad-deathclaw.fandom.com/wiki/Bad_Deathclaw_Wiki
+WIKIURL https://www.patreon.com/falloutthirteenremnants
 
 ## Rules address
 RULESURL https://docs.google.com/document/d/1m3kFeqUw-oFefoEadolTPbkaOh7rQ1-xCx9ba5UYClc/edit?usp=sharing
