@@ -1,7 +1,7 @@
 // 'basic' language; spoken by default.
 /datum/language/common
-	name = "Galactic Common"
-	desc = "The common galactic tongue."
+	name = "English"
+	desc = "The language common in North America and some parts of Europe."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	key = "0"

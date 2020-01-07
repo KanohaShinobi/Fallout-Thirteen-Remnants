@@ -348,10 +348,10 @@
 			return "Code Scotch"
 
 /proc/get_all_jobs()
-	return list("Centurion", "NCR Captain", "Overseer", "Sheriff",
+	return list("Centurion", "NCR Captain", "Winter NCR Captain", "Overseer", "Sheriff",
 				"Paladin", "Knight", "Scribe", "Initiate", "Settler",
 				"Decanus", "Vexillarius", "Veteran Legionnaire", "Legionary",
-				"NCR Lieutenant", "NCR Sergeant", "NCR Trooper", "NCR Recruit",
+				"NCR Lieutenant", "NCR Sergeant", "NCR Trooper", "NCR Recruit", "Winter NCR Lieutenant", "Winter NCR Sergeant", "Winter NCR Trooper", "Winter NCR Recruit",
 				"NCR Veteran Ranger", "NCR Patrol Ranger", "NCR Recon Ranger",
 				"Chief of Security", "Vault-tec Doctor", "Vault-tec Scientist",
 				"Vault-tec Security", "Vault-tec Engineer", "Vault Dweller",

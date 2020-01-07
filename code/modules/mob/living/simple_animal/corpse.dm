@@ -213,6 +213,8 @@ obj/effect/mob_spawn/human/corpse/raider
     hair_style = "Bald"
     facial_hair_style = "Shaved"
 
+
+
 obj/effect/mob_spawn/human/corpse/raidermelee
     name = "Raider Melee Corpse"
     uniform = /obj/item/clothing/under/jabroni
@@ -241,12 +243,94 @@ obj/effect/mob_spawn/human/corpse/raidermelee
     hair_style = "Bald"
     facial_hair_style = "Shaved"
 
-obj/effect/mob_spawn/human/corpse/raiderbossalt
+/obj/effect/mob_spawn/human/corpse/raiderbossalt
     name = "Raider Boss Corpse"
     uniform = /obj/item/clothing/under/f13/mercc
     suit = /obj/item/clothing/suit/armor/f13/bmetalarmor
     shoes = /obj/item/clothing/shoes/combat
     gloves = /obj/item/clothing/gloves/color/black
     head = /obj/item/clothing/head/helmet/knight/fluff/metal
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/ncr
+    uniform = /obj/item/clothing/under/f13/ncr
+    suit = /obj/item/clothing/suit/armor/f13/ncrarmor
+    shoes = /obj/item/clothing/shoes/f13/military/ncr
+    head = /obj/item/clothing/head/f13/ncr/goggles
+    gloves = /obj/item/clothing/gloves/f13/ncr
+    mask = /obj/item/clothing/mask/ncr_facewrap
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/ncr_recon
+    uniform = /obj/item/clothing/under/f13/ncr
+    suit = /obj/item/clothing/suit/armor/f13/ncrarmor
+    shoes = /obj/item/clothing/shoes/f13/military/ncr
+    head = /obj/item/clothing/head/beret/ncr_recon
+    gloves = /obj/item/clothing/gloves/f13/ncr
+    mask = /obj/item/clothing/mask/ncr_facewrap
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/ncr_lieutenant
+    uniform = /obj/item/clothing/under/f13/ncr/officer
+    suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
+    shoes = /obj/item/clothing/shoes/f13/military/ncr_officer
+    glasses 	= /obj/item/clothing/glasses/sunglasses/big
+    head = /obj/item/clothing/head/beret/ncr
+    gloves = /obj/item/clothing/gloves/f13/leather/ncr_officer
+    mask = /obj/item/clothing/mask/ncr_facewrap
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/ncr_captain
+    uniform = /obj/item/clothing/under/f13/ncr/officer
+    suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
+    shoes = /obj/item/clothing/shoes/f13/military/ncr_officer
+    glasses = /obj/item/clothing/glasses/sunglasses/big
+    head = /obj/item/clothing/head/beret/ncr
+    gloves = /obj/item/clothing/gloves/f13/leather/ncr_officer
+    mask = /obj/item/clothing/mask/ncr_facewrap
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/legion
+    uniform = /obj/item/clothing/under/f13/legskirt
+    suit = /obj/item/clothing/suit/armor/f13/legion/recruit
+    shoes = /obj/item/clothing/shoes/f13/military/legionleather
+    head = /obj/item/clothing/head/helmet/f13/legion/recruit
+    glasses	= /obj/item/clothing/glasses/legiongoggles
+    mask = /obj/item/clothing/mask/bandana/legrecruit
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/legion_veteran
+    uniform = /obj/item/clothing/under/f13/legskirt
+    suit = /obj/item/clothing/suit/armor/f13/legion/vet
+    shoes = /obj/item/clothing/shoes/f13/military/legionleather
+    head = /obj/item/clothing/head/helmet/f13/legion/vet
+    glasses	= /obj/item/clothing/glasses/legiongoggles
+    mask = /obj/item/clothing/mask/bandana/legvet
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/legion_decanus
+    uniform = /obj/item/clothing/under/f13/legskirt
+    suit = /obj/item/clothing/suit/armor/f13/legion/vet
+    shoes = /obj/item/clothing/shoes/f13/military/legionleather
+    head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+    glasses	= /obj/item/clothing/glasses/sunglasses/big
+    mask = /obj/item/clothing/mask/bandana/legdecan
+    hair_style = "Bald"
+    facial_hair_style = "Shaved"
+
+/obj/effect/mob_spawn/human/corpse/legion_explorer
+    uniform = /obj/item/clothing/under/f13/legskirt
+    suit = /obj/item/clothing/suit/armor/f13/legion/recruit
+    shoes = /obj/item/clothing/shoes/f13/military/legionleather
+    head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
+    glasses	= /obj/item/clothing/glasses/legiongoggles
+    mask = /obj/item/clothing/mask/bandana/legrecruit
     hair_style = "Bald"
     facial_hair_style = "Shaved"

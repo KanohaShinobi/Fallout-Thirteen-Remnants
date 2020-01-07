@@ -18,6 +18,12 @@
 	icon_state = "ncr_infantry_helmet_w"
 	item_state = "ncr_infantry_helmet_w"
 
+/obj/item/clothing/head/f13/ncr/winter/medic
+	name = "NCR patrol helmet"
+	desc = "A standard issue NCR Infantry helmet, colored to suit a winter environment."
+	icon_state = "ncr_infantry_helmet_w"
+	item_state = "ncr_infantry_helmet_w"
+
 /obj/item/clothing/head/f13/ncr/mp
 	name = "NCR mp helmet"
 	desc = "An NCR MP helmet, colored to suit a military police officer."
