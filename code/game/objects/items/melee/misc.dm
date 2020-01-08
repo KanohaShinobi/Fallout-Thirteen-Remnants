@@ -227,7 +227,7 @@
 			return
 	else
 		if(cooldown <= world.time)
-			if(target.getStaminaLoss() > 120)
+			if(target.getStaminaLoss() > 150)
 				return
 			if(ishuman(target))
 				var/mob/living/carbon/human/H = target
@@ -236,7 +236,7 @@
 				if(check_martial_counter(H, user))
 					return
 			playsound(get_turf(src), 'sound/effects/woodhit.ogg', 75, 1, -1)
-			target.adjustStaminaLoss(30)
+			target.adjustStaminaLoss(50)
 			add_logs(user, target, "attacked", src)
 			src.add_fingerprint(user)
 			target.visible_message("<span class ='danger'>[user] hits [target] with [src]!</span>", \
@@ -286,7 +286,7 @@
 		icon_state = "telebaton_1"
 		item_state = "nullrod"
 		w_class = WEIGHT_CLASS_BULKY //doesnt fit in backpack when its on for balance
-		force = 10 //stunbaton damage
+		force = 15 //stunbaton damage
 		attack_verb = list("smacked", "struck", "cracked", "beaten")
 	else
 		to_chat(user, "<span class ='notice'>You collapse the baton.</span>")

@@ -12,13 +12,13 @@
 	icon_state = "ncr_medical_helmet"
 	item_state = "ncr_medical_helmet"
 
-/obj/item/clothing/head/f13/ncr/winter
-	name = "NCR patrol helmet"
-	desc = "A standard issue NCR Infantry helmet, colored to suit a winter environment."
-	icon_state = "ncr_infantry_helmet_w"
-	item_state = "ncr_infantry_helmet_w"
+/obj/item/clothing/head/f13/ncr/medic/winter
+	name = "NCR medical helmet"
+	desc = "A standard issue NCR Infantry helmet, colored to suit a medical officer."
+	icon_state = "ncr_medical_helmet_w"
+	item_state = "ncr_medical_helmet_w"
 
-/obj/item/clothing/head/f13/ncr/winter/medic
+/obj/item/clothing/head/f13/ncr/winter
 	name = "NCR patrol helmet"
 	desc = "A standard issue NCR Infantry helmet, colored to suit a winter environment."
 	icon_state = "ncr_infantry_helmet_w"
