@@ -1,4 +1,4 @@
-#define JOB_MODIFICATION_MAP_NAME "BoxStation"
+#define JOB_MODIFICATION_MAP_NAME "Sunnydale"
 
 /datum/job/New()
 	..()
