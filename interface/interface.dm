@@ -1,13 +1,13 @@
 //Please use mob or src (not usr) in these procs. This way they can be called in the same fashion as procs.
-/client/verb/wiki()
-	set name = "wiki"
+/client/verb/patreon()
+	set name = "patreon"
 	set desc = "Opens the Patreon in your browser."
 	set hidden = 1
-	var/wikiurl = CONFIG_GET(string/wikiurl)
-	if(wikiurl)
-		if(alert("This will open the Patreon in your browser. Are you sure?",,"Yes","No")!="Yes")
+	var/patreonurl = CONFIG_GET(string/patreonurl)
+	if(patreonurl)
+		if(alert("This will open the Patreon in your browser. Continue?",,"Yes","No")!="Yes")
 			return
-		src << link(wikiurl)
+		src << link(patreonurl)
 	else
 		to_chat(src, "<span class='danger'>The Patreon URL is not set in the server configuration.</span>")
 	return
@@ -18,11 +18,11 @@
 	set hidden = 1
 	var/discordurl = CONFIG_GET(string/discordurl)
 	if(discordurl)
-		if(alert("This will open the Discord in your browser. Are you sure?",,"Yes","No")!="Yes")
+		if(alert("This will open the Discord in your browser. Continue?",,"Yes","No")!="Yes")
 			return
 		src << link(discordurl)
 	else
-		to_chat(src, "<span class='danger'>The discord URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='danger'>The Discord URL is not set in the server configuration.</span>")
 	return
 
 /client/verb/rules()
@@ -30,15 +30,26 @@
 	set desc = "Show Server Rules."
 	set hidden = 1
 	var/rulesurl = CONFIG_GET(string/rulesurl)
-	switch(alert("Where would you like to see the rules?", null, "Discord (external link)", "View here", "Cancel"))
-		if("Discord (external link)")
-			if(!rulesurl)
-				to_chat(src, "<span class='danger'>The rules URL is not set in the server configuration.</span>")
-				return
-			src << link(rulesurl)
-		if("View here")
-			src << browse('html/rules.html', "window=changes")
+	if(rulesurl)
+		if(alert("This will open the rules document in your browser. Continue?",,"Yes","No")!="Yes")
+			return
+		src << link(rulesurl)
+	else
+		to_chat(src, "<span class='danger'>The Rules URL is not set in the server configuration.</span>")
+	return
 
+/client/verb/forums()
+	set name = "forums"
+	set desc = "Shows the forums."
+	set hidden = 1
+	var/forumsurl = CONFIG_GET(string/forumsurl)
+	if(forumsurl)
+		if(alert("This will open forums in your browser. Continue?",,"Yes","No")!="Yes")
+			return
+		src << link(forumsurl)
+	else
+		to_chat(src, "<span class='danger'>The Forums URL is not set in the server configuration.</span>")
+	return
 
 /client/verb/github()
 	set name = "github"
@@ -46,7 +57,7 @@
 	set hidden = 1
 	var/githuburl = CONFIG_GET(string/githuburl)
 	if(githuburl)
-		if(alert("This will open the Github repository in your browser. Are you sure?",,"Yes","No")!="Yes")
+		if(alert("This will open the Github repository in your browser. Continue?",,"Yes","No")!="Yes")
 			return
 		src << link(githuburl)
 	else
