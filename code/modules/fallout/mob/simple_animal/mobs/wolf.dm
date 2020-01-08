@@ -29,9 +29,9 @@
 	environment_smash = 0
 	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)
-	melee_damage_lower = 20
-	melee_damage_upper = 20
-	aggro_vision_range = 15
+	melee_damage_lower = 7
+	melee_damage_upper = 10
+	aggro_vision_range = 10
 //	idle_vision_range = 7
 	attacktext = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
@@ -46,5 +46,5 @@
 	icon_gib = "gib"
 	maxHealth = 100
 	health = 100
-	melee_damage_lower = 25
-	melee_damage_upper = 35
+	melee_damage_lower = 13
+	melee_damage_upper = 15

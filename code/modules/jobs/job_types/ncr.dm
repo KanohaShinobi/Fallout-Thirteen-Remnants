@@ -606,7 +606,7 @@ Sergeant
 	belt =          /obj/item/storage/belt/military/assault/ncr
 	suit_store = 	null
 	head =          /obj/item/clothing/head/f13/ncr
-	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr/winter
 	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat/survival=1, \
@@ -651,6 +651,7 @@ Corporal
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier_winter
 	suit_store = 	null
 	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr/winter
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat/survival=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
@@ -673,7 +674,7 @@ Corporal
 	name = "Combat Medic"
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/winter
-	head = /obj/item/clothing/head/f13/ncr/winter/medic
+	head = /obj/item/clothing/head/f13/ncr/medic/winter
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m9mm=2,
 		/obj/item/storage/firstaid/regular=1,
@@ -722,6 +723,7 @@ Trooper
 	gloves =        /obj/item/clothing/gloves/f13/ncr/winter
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/winter
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier_winter
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr/winter
 	glasses = 		null
 	suit_store = 	null
 	backpack_contents = list(
@@ -777,6 +779,7 @@ Recruit
 	glasses = 		null
 	suit_store = 	/obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
 	belt =          /obj/item/storage/belt/military/assault/ncr/winter
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr/winter
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/small=2, \
 		/obj/item/kitchen/knife/combat/survival=1, \
